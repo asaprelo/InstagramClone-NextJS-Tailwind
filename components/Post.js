@@ -1,14 +1,14 @@
 import Image from "next/image";
-import {DotsHorizontalIcon, HeartIcon, ChatIcon, PaperAirplaneIcon, BookmarkIcon, EmojiHappyIcon} from "@heroicons/react/outline";
+import {DotsHorizontalIcon,BadgeCheckIcon, HeartIcon, ChatIcon, PaperAirplaneIcon, BookmarkIcon, EmojiHappyIcon} from "@heroicons/react/outline";
 
 const Post = (props) => {
     return (
-        <div className="border rounded-md mt-2 mb-2 bg-white border">
+        <div className="border rounded-md mt-2 mb-3.5 bg-white border">
             <div className="post-header flex justify-between">
                 <div className="post-header-left items-center flex p-2">
-                    <Image width="35" height="35" loading="lazy" className="cursor-pointer p-1 rounded-full" layout="fixed" src={props.image}/>
+                    <Image width="35" height="35" loading="lazy" className="cursor-pointer p-1 rounded-full" layout="fixed" src={props.profile_pic}/>
                     <div>
-                        <p className="ml-1 p-1 text-xs font-bold">{props.account_name}</p>
+                        <p className="flex items-center ml-1 p-1 text-xs font-bold">{props.account_name}{props.verified ? (<BadgeCheckIcon className="h-4 ml-1 text-blue-400"/>) : ''}</p>
                         <p className="ml-1 p-1 -mt-1 text-xs text-gray-500">{props.locality}</p>
                     </div>
 
@@ -33,7 +33,7 @@ const Post = (props) => {
                 </div>
             </div>
             <p className="cursor-pointer  pl-3 font-bold text-sm mb-2">Piace a {props.likes} persone</p>
-            <p className="pl-3 text-sm"><span className="font-bold text-sm mr-1">{props.account_name}</span>{props.desc}</p>
+            <p className="pl-3 text-clip text-sm"><span className="font-bold text-sm mr-1">{props.account_name}</span>{props.desc}</p>
             <p className="cursor-pointer  pl-3 mt-2 text-gray-500 text-sm">Mostra tutti e {props.comments} i commenti</p>
 
             <p className="pl-3 mt-2 text-gray-500 text-xs mb-2">3 ore fa</p>
