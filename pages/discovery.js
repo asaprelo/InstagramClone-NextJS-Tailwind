@@ -3,7 +3,7 @@ import DiscoveryPost from "../components/DiscoveryPost";
 
 const posts = [
     {
-        url: "https://instagram.fcia7-1.fna.fbcdn.net/v/t51.2885-15/286276754_345854321012852_6015228185855078087_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=instagram.fcia7-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=T1dvoMQcQDkAX8Mq1hD&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg1NTQ3OTYwMjczMjI0MzYyOA%3D%3D.2-ccb7-5&oh=00_AT_RZpdWHb1bJmHX654MbGp7gdCSD2ydlbdaqLYxSdkuTw&oe=62B87325&_nc_sid=30a2ef",
+        url: "https://instagram.fcia7-1.fna.fbcdn.net/v/t51.2885-15/281909892_959337214670134_5848997699700460296_n.webp?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fcia7-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=dr5tPAPxJmUAX8y-93v&tn=PcZfebnFHfRMowdG&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg0MDMzMTY3NjQ5MzkyNDE2NA%3D%3D.2-ccb7-5&oh=00_AT-OXFvKfG8k8zLcm3yAVIlle4A90ccbsUqZwSiJS5gZcA&oe=62B818A6&_nc_sid=30a2ef",
         likes: 1231,
         comments: 12
     },
@@ -26,7 +26,7 @@ const posts = [
     }
     ,
     {
-        url: "https://instagram.fcia7-1.fna.fbcdn.net/v/t51.2885-15/287508605_463536645577060_3211252506912172332_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fcia7-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=TJyz9I0VSPwAX8OzHZu&edm=AI8qBrIBAAAA&ccb=7-5&ig_cache_key=Mjg1OTM2OTgyMjYyNzM1MzE2Mw%3D%3D.2-ccb7-5&oh=00_AT8tB0m5yE55VR_IXLSSS5x5d3J5_GLoSPJ73fNXLfRUrA&oe=62B83D29&_nc_sid=a0bfed",
+        url: "https://instagram.fcia7-1.fna.fbcdn.net/v/t51.2885-15/14582479_703293616495211_9151026439489847296_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fcia7-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=xDMYaQMdTpYAX8lz2bn&tn=PcZfebnFHfRMowdG&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MTM1NjY0MTU5NjczNzQyNzM3NQ%3D%3D.2-ccb7-5&oh=00_AT9GI9rXilac9CUxTsOAan3jCgvKAda94Zh8IzIvHStcXg&oe=62B7A751&_nc_sid=30a2ef",
         likes: 213,
         comments: 43,
     }
