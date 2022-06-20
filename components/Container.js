@@ -41,7 +41,7 @@ const fakePosts = [
 const Container = () => {
     return (
         <div className="md:max-w-3xl sm:max-w-xs flex md:m-auto md:mt-6">
-            <div className="xs:mx-auto md:mx-0">
+            <div className="xs:mx-auto md:mx-0 mt-3">
                 <div className="flex scrollbar-hide overflow-x-auto xs:m-1 md:m-0 max-w-sm border rounded-lg bg-white border-2">
                     <ul className="flex p-3 space-x-6">
                         <StoryCircle image={"https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec"}/>
@@ -52,7 +52,7 @@ const Container = () => {
                         <StoryCircle image={"https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec"}/>
                     </ul>
                 </div>
-                <div className="rounded-lg md:m-0 xs:m-2 mt-3">
+                <div className="rounded-lg md:m-0 xs:m-1 mt-3">
                     {
                         fakePosts.map((post) => (
                             <Post key={post.likes} account_name = {post.account_name} likes = {post.likes} image = {post.post_img} desc = {post.post_desc} locality = {post.localization} comments={post.comments_n}/>
