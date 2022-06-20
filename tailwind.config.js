@@ -23,6 +23,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      colors: {
+        ig_bg: '#fafafa',
+      },
       minWidth: {
         '20': '20rem',
       },

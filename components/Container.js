@@ -5,7 +5,7 @@ import Suggestion from "./Suggestion";
 
 const Container = () => {
     return (
-        <div className="max-w-3xl sm:mx-auto flex md:m-auto md:mt-3">
+        <div className="max-w-3xl sm:mx-auto flex md:m-auto md:mt-6">
             <div className="xs:mx-auto md:mx-0">
                 <div className="flex scrollbar-hide overflow-x-auto xs:m-2 md:m-0 max-w-md border rounded-lg bg-white border-2">
                     <ul className="flex p-3 space-x-6">
