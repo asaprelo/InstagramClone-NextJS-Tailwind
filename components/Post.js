@@ -33,7 +33,7 @@ const Post = (props) => {
                 </div>
             </div>
             <p className="cursor-pointer  pl-3 font-bold text-sm mb-2">Piace a 237 persone</p>
-            <p className="pl-3 text-sm"><span className="font-bold text-sm mr-1">Kumulala69</span>“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.”</p>
+            <p className="pl-3 text-sm"><span className="font-bold text-sm mr-1">Kumulala69</span>“I`&apos;`m selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can`&apos;`t handle me at my worst, then you sure as hell don`&apos;`t deserve me at my best.”</p>
             <p className="cursor-pointer  pl-3 mt-2 text-gray-500 text-sm">Mostra tutti e 3 i commenti</p>
 
             <p className="pl-3 mt-2 text-gray-500 text-xs mb-2">3 ore fa</p>
