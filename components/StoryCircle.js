@@ -8,7 +8,7 @@ const StoryCircle = (props) => {
                     <img className="w-17 object-scale-down h-17 rounded-full" src={props.image}/>
                 </a>
             </div>
-            <p className="text-xs">yuribut</p>
+            <p className="text-xs">kumulala69</p>
         </li>
     )
 }
