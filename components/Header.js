@@ -37,7 +37,7 @@ const Header = () => {
     }
 
     return (
-        <header className="border-b-2 w-full bg-white sticky z-50 top-0">
+        <header className="border-b-2 w-full xs:pl-2 xs:pr-2 bg-white sticky z-50 top-0">
             <div className="flex p-1 md:max-w-4xl m-auto justify-between">
 
                 <div className="flex items-center">
