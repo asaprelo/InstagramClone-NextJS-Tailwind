@@ -6,8 +6,7 @@ const Post = (props) => {
         <div className="border rounded-md mt-2 mb-2 bg-white border-2">
             <div className="post-header flex justify-between">
                 <div className="post-header-left flex p-2">
-                    <Image width="50" height="50" loading="lazy" className="cursor-pointer p-1 rounded-full" objectFit="fill" src={props.image}/>
-
+                    <Image width="50" height="50" loading="lazy" className="cursor-pointer p-1 rounded-full" layout="fixed" src={props.image}/>
                     <div>
                         <p className="ml-1 p-1 text-xs font-bold">{props.account_name}</p>
                         <p className="ml-1 p-1 text-xs">{props.locality}</p>

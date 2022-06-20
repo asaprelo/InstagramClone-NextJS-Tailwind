@@ -42,7 +42,7 @@ const Header = () => {
 
                 <div className="flex items-center">
                     <Link href="/">
-                        <Image width="110" height="52" className="cursor-pointer p-2" objectFit="contain" src="https://i.ibb.co/whp8gfq/Instagram-logo-svg.png"></Image>
+                        <Image width="110" height="52" className="cursor-pointer p-2" objectFit="contain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png"></Image>
                     </Link>
                 </div>
 
