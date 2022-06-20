@@ -52,7 +52,7 @@ const Header = () => {
                     <XCircleIcon onClick={toggleSearch} className={`font-light cursor-pointer h-5 ${searchState ? `` : `hidden`}`}/>
                 </div>
 
-                <div className="flex items-center sm:space-x-2 md:space-x-5 space-x-5">
+                <div className="flex items-center xs:space-x-2 md:space-x-5 space-x-5">
                     <div className="items-center cursor-pointer">
                         <Link href={"/"}>
                             <HomeIcon className="h-7 text-xs"/>
