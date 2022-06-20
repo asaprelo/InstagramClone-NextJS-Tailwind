@@ -37,7 +37,7 @@ const Header = () => {
     }
 
     return (
-        <header className="border-b-2 w-full xs:pl-2 xs:pr-2 bg-white sticky z-50 top-0">
+        <header className="border-b w-full xs:pl-2 xs:pr-2 bg-white sticky z-50 top-0">
             <div className="flex p-1 md:max-w-4xl m-auto justify-between">
 
                 <div className="flex items-center">
@@ -52,7 +52,7 @@ const Header = () => {
                     <XCircleIcon onClick={toggleSearch} className={`font-light cursor-pointer h-5 ${searchState ? `` : `hidden`}`}/>
                 </div>
 
-                <div className="flex items-center xs:space-x-2 md:space-x-5 space-x-5">
+                <div className="flex items-center xs:space-x-3 md:space-x-5 space-x-5">
                     <div className="items-center cursor-pointer">
                         <Link href={"/"}>
                             <HomeIcon className="h-7 text-xs"/>
