@@ -32,7 +32,7 @@ const Post = (props) => {
                     </div>
                 </div>
             </div>
-            <p className="cursor-pointer  pl-3 font-bold text-sm mb-2">Piace a {props.likes} persone</p>
+            <p className="cursor-pointer  pl-3 font-bold text-sm mb-2">Piace a <span className="no-underline">{props.likes}</span> persone</p>
             <p className="pl-3 text-clip text-sm"><span className="font-bold text-sm mr-1">{props.account_name}</span>{props.desc}</p>
             <p className="cursor-pointer  pl-3 mt-2 text-gray-500 text-sm">Mostra tutti e {props.comments} i commenti</p>
 

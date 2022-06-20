@@ -1,14 +1,17 @@
-import {HomeIcon} from "@heroicons/react/solid";
-import {PaperAirplaneIcon, PlusCircleIcon, SearchCircleIcon, SearchIcon, HeartIcon,XCircleIcon} from "@heroicons/react/outline";
+import {HomeIcon, PaperAirplaneIcon as PaperO,PlusCircleIcon as PlusO, HeartIcon as HeartO} from "@heroicons/react/solid";
+import {PaperAirplaneIcon, PlusCircleIcon, HomeIcon as HomeO, SearchIcon, HeartIcon,XCircleIcon} from "@heroicons/react/outline";
 import {FaRegCompass} from "react-icons/fa";
+import {AiFillCompass} from "react-icons/ai";
 import Image from "next/image";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Link from "next/link";
+import {useRouter} from "next/router";
 
 const Header = () => {
 
     const [searchState, setSearchState] = useState(false);
     const [searchInput, setSearchInput] = useState('Cerca');
+    const [path, setPath] = useState('');
 
     const toggleSearch = () => {
         if(searchState) {
@@ -37,6 +40,12 @@ const Header = () => {
         else setSearchInput('');
     }
 
+    const router = useRouter();
+
+    useEffect(() => {
+        setPath(router.route)
+    },[]);
+
     return (
         <header className="border-b w-full xs:pl-2 xs:pr-2 bg-white sticky z-50 top-0">
             <div className="flex p-1 md:max-w-4xl m-auto justify-between">
@@ -56,30 +65,67 @@ const Header = () => {
                 <div className="flex items-center xs:space-x-3 md:space-x-5 space-x-5">
                     <div className="items-center cursor-pointer">
                         <Link href={"/"}>
-                            <HomeIcon className="stroke-2 h-7 text-xs"/>
+                        {
+                            (path === '/') ? (
+                                <HomeIcon className="stroke-2 h-7 text-xs"/>
+                            ) :
+                            (
+                                <HomeO className="stroke-2 h-7 text-xs"/>
+                            )
+                        }
                         </Link>
                     </div>
 
                     <div className="items-center cursor-pointer">
                         <Link href="/inbox">
-                            <PaperAirplaneIcon className="h-7"/>
+                        {
+                            (path === '/inbox') ? (
+                                    <PaperO className="h-7"/>
+                                ) :
+                                (
+                                    <PaperAirplaneIcon className="h-7"/>
+                                )
+                        }
                         </Link>
                     </div>
 
                     <div className="items-center cursor-pointer">
                         <Link href={"/upload"}>
-                            <PlusCircleIcon className="h-7"/>
+                        {
+                            (path === '/upload') ? (
+                                    <PlusO className="h-7"/>
+                                ) :
+                                (
+                                    <PlusCircleIcon className="h-7"/>
+                                )
+                        }
                         </Link>
                     </div>
 
                     <div className="items-center cursor-pointer">
                         <Link href={"/discovery"}>
-                            <FaRegCompass size={25}/>
+                        {
+                            (path === '/discovery') ? (
+                                    <AiFillCompass size={25}/>
+                                ) :
+                                (
+                                    <FaRegCompass size={25}/>
+                                )
+                        }
                         </Link>
                     </div>
 
                     <div className="items-center cursor-pointer">
-                        <HeartIcon className="h-7"/>
+                        <Link href={"/likes"}>
+                        {
+                            (path === '/likes') ? (
+                                        <HeartO className="h-7"/>
+                                ) :
+                                (
+                                        <HeartIcon className="h-7"/>
+                                )
+                        }
+                        </Link>
                     </div>
 
                     <div className="items-center flex justify-center cursor-pointer">
