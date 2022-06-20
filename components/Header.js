@@ -1,5 +1,6 @@
 import {HomeIcon} from "@heroicons/react/solid";
 import {PaperAirplaneIcon, PlusCircleIcon, SearchCircleIcon, SearchIcon, HeartIcon,XCircleIcon} from "@heroicons/react/outline";
+import {FaRegCompass} from "react-icons/fa";
 import Image from "next/image";
 import {useState} from "react";
 import Link from "next/link";
@@ -47,7 +48,7 @@ const Header = () => {
                 </div>
 
                 <div className="h-9 min-w-10 hidden text-gray-400 m-auto rounded-lg p-4 sm:inline-flex bg-gray-100 flex items-center">
-                    <SearchIcon className={`font-light cursor-text h-5 ${searchState ? `hidden` : ``}`}/>
+                    <SearchIcon className={`font-thin cursor-text h-5 ${searchState ? `hidden` : ``}`}/>
                     <input onFocus={clearText} onBlur={resetText} onChange={handleSearch} onClick={!searchState ? toggleSearch : undefined } className="ml-2 font-light bg-transparent focus:outline-none" type="text" value={searchInput}/>
                     <XCircleIcon onClick={toggleSearch} className={`font-light cursor-pointer h-5 ${searchState ? `` : `hidden`}`}/>
                 </div>
@@ -55,7 +56,7 @@ const Header = () => {
                 <div className="flex items-center xs:space-x-3 md:space-x-5 space-x-5">
                     <div className="items-center cursor-pointer">
                         <Link href={"/"}>
-                            <HomeIcon className="h-7 text-xs"/>
+                            <HomeIcon className="stroke-2 h-7 text-xs"/>
                         </Link>
                     </div>
 
@@ -66,11 +67,15 @@ const Header = () => {
                     </div>
 
                     <div className="items-center cursor-pointer">
-                        <PlusCircleIcon className="h-7"/>
+                        <Link href={"/upload"}>
+                            <PlusCircleIcon className="h-7"/>
+                        </Link>
                     </div>
 
                     <div className="items-center cursor-pointer">
-                        <SearchCircleIcon className="h-7"/>
+                        <Link href={"/discovery"}>
+                            <FaRegCompass size={25}/>
+                        </Link>
                     </div>
 
                     <div className="items-center cursor-pointer">
